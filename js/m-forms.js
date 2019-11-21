@@ -33,7 +33,7 @@ Parsley.addMessages('ru', {
   mincheck:       "Выберите не менее %s значений.",
   maxcheck:       "Выберите не более %s значений.",
   check:          "Выберите от %s до %s значений.",
-  equalto:        "Это значение должно совпадать."
+  equalto:        "Это значение должно совпадать"
 });
 
 Parsley.setLocale('ru');

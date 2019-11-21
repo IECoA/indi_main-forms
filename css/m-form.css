@@ -99,11 +99,14 @@ body.forms {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-user-select: text;
+  -webkit-user-select: text
 }
 .m-form input:not([type='checkbox']):not([type='submit']):not([type='radio']):not([type='button']):not([type='file']):focus, textarea:focus, select:focus {
   outline: 0;
-  border-color: #2F96D9;
+  border-color: #2F96D9
+}
+.m-form input:not([type='checkbox']):not([type='submit']):not([type='radio']):not([type='button']):not([type='file']):focus ~ label, textarea:focus ~ label, select:focus ~ label {
+  color: #2F96D9
 }
 .m-form select {
   margin: 16px 0 0;
@@ -168,7 +171,6 @@ body.forms {
 .m-form input:focus:not([type='checkbox']):not([type='submit']):not([type='radio']):not([type='button']):not([type='file']) ~ label {
   transform: translate(0, 0.45rem) scale(1);
   padding-left: 12px;
-  color: #2F96D9;
   cursor: pointer;
   text-transform: inherit;
 }

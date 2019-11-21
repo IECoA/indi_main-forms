@@ -52,10 +52,10 @@ html.fp-m-form body {
   padding-right: 60px
 }
 .form-container .pd--b {
-  padding-bottom: 30px
+  padding-bottom: 40px
 }
 .form-container .pd--t {
-  padding-top: 30px
+  padding-top: 40px
 }
 .form-container h1, .form-container h2, .form-container h3, .form-container h4 {
   margin: 0;
@@ -92,7 +92,9 @@ html.fp-m-form body {
 .m-form + p + .splitter {
   margin-top: 38px
 }
-
+.f-policy {
+  font-size: 12px
+}
 #password ~ .unmask {
   height: 2.4625rem;
   background: center / 22px no-repeat url(../img/eye-show-3.svg);
@@ -149,7 +151,9 @@ background-color:transparent;
 background:none;
 box-shadow:none
 }
-
+input[type].parsley-error, textarea.parsley-error {
+  border-color: #e23030;
+}
 
 /* Media */
 
