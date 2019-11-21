@@ -12,34 +12,51 @@
   <body>
     <header></header>
 
-    <div class="form-container">
-      <div class="form-topline pd--lr">
-        <p>Уже зарегистрированы? <a href="login-form.html"> Войти на сайт</a></p>
-      </div>
-      <div class="form-wrapper pd--lr pd--b">
-        <h1>Создать аккаунт</h1>
-        <form class="m-form" action="index.html" method="post" data-parsley-validate>
-          <div class="field">
-            <input type="email" name="email" id="email" placeholder="myemail@example.com" required/>
-            <label for="email"><span>Email</span></label>
-          </div>
-          <div class="field">
-            <input type="password" name="password" id="password" placeholder="Введите пароль" pattern=".{4,}" required/>
-            <label for="password"><span>Пароль</span></label>
-            <span class="unmask far fa-eye" type="button" title="Показать или скрыть пароль" onclick="showPassword()"></span>
-          </div>
-          <input type="submit" value="Зарегистироваться" class="m-button">
-        </form>
-        <p class="f-policy">Нажимая на кнопку «Зарегистироваться», я даю <a href="">согласие на обработку персональных данных</a> и принимаю <a href="">условия пользовательского соглашения</a></p>
-        <div class="splitter">
-          <span>или</span>
+    <div class="form-container banner">
+      <div class="">
+        <div class="form-topline pd--lr">
+          <p>Уже зарегистрированы? <a href="login-form.html"> Войти на сайт</a></p>
         </div>
-        <h2>Войти с помощью</h2>
-        <!-- uLogin off
-        <div style="display:flex;justify-content: center;">
-          <script async src="//ulogin.ru/js/ulogin.js"></script>
-          <div id="uLogin" data-ulogin="display=panel;theme=flat;fields=first_name,last_name;providers=vkontakte,google,yandex,mailru,facebook;hidden=;redirect_uri=https%3A%2F%2Findiprint.ru;mobilebuttons=0;"></div>
-        </div> -->
+        <div class="form-wrapper pd--lr pd--b">
+          <h1>Создать аккаунт</h1>
+          <form class="m-form" action="index.html" method="post" data-parsley-validate>
+            <div class="field">
+              <input type="email" name="email" id="email" placeholder="myemail@example.com" required/>
+              <label for="email"><span>Email</span></label>
+            </div>
+            <div class="field">
+              <input type="password" name="password" id="password" placeholder="Введите пароль" pattern=".{4,}" required/>
+              <label for="password"><span>Пароль</span></label>
+              <span class="unmask far fa-eye" type="button" title="Показать или скрыть пароль" onclick="showPassword()"></span>
+            </div>
+            <input type="submit" value="Зарегистироваться" class="m-button">
+          </form>
+          <p class="f-policy">Нажимая на кнопку «Зарегистироваться», я даю <a href="">согласие на обработку персональных данных</a> и принимаю <a href="">условия пользовательского соглашения</a></p>
+          <div class="splitter">
+            <span>или</span>
+          </div>
+          <h2>Войти с помощью</h2>
+          <!-- uLogin off
+          <div style="display:flex;justify-content: center;">
+            <script async src="//ulogin.ru/js/ulogin.js"></script>
+            <div id="uLogin" data-ulogin="display=panel;theme=flat;fields=first_name,last_name;providers=vkontakte,google,yandex,mailru,facebook;hidden=;redirect_uri=https%3A%2F%2Findiprint.ru;mobilebuttons=0;"></div>
+          </div> -->
+        </div>
+      </div>
+      <div class="form-banner">
+        <picture>
+          <source srcset="img/Book-banner.webp" type="image/webp">
+          <source srcset="img/Book-banner.jpg" type="image/jpeg">
+          <img src="img/Book-banner.jpg" alt="Регистрация – онлайн-сервис Индипринт – Фотокниги, скидка 20% на первый заказ">
+        </picture>
+        <div>
+          <h2>После регистрации доступны</h2>
+          <ul>
+            <li><span>Скидка 20% на первый заказ</span></li>
+            <li><span>Хранение проектов и фото онлайн – с доступом на любом компьютере и телефоне</span></li>
+            <li><span>Регулярные акции и предложения со скидками до 50%</span></li>
+          </ul>
+        </div>
       </div>
     </div>
 

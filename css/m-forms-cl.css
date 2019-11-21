@@ -37,7 +37,7 @@ html.fp-m-form body {
   background-color: antiquewhite
 }
 .form-container {
-  max-width: 440px;
+  max-width: 880px;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.16);
   border: 1px solid #0000000f;
   border-radius: 4px;
@@ -179,5 +179,62 @@ input[type].parsley-error, textarea.parsley-error {
   .form-container .pd--lr {
     padding-right: 6vw;
     padding-left: 6vw
+  }
+}
+
+
+
+/* Second Create Half - Relocate later */
+.form-container.banner {
+  flex-direction: row;
+  display: -webkit-box;
+  display: flex
+}
+.form-container.banner > div {
+  max-width: 50%
+}
+.form-container.banner .form-banner {
+  overflow: hidden;
+  position: relative;
+  border-radius: 0 4px 4px 0;
+  width: 100%
+}
+.form-banner > div {
+  padding: 22px 30px 0;
+  color: #616161
+}
+.form-banner > div h2 {
+  text-align: left;
+  font-size: 1.4em;
+  margin-bottom: 0.8em
+}
+.form-banner > div ul {
+  list-style-position: outside;
+  padding: 0 0 0 20px
+}
+.form-banner > div ul li {
+  margin-bottom: 3px
+}
+.form-banner > div ul span {
+  font-weight: 300;
+  position: relative;
+  left: -4px
+}
+.form-container.banner .form-banner > * {
+  position: absolute;
+}
+.form-banner picture {
+  filter: contrast(0.9);
+}
+
+@media (max-width: 1010px) {
+  .form-container.banner {
+    max-width: 440px
+  }
+  .form-container .form-banner {
+    display: none
+  }
+  .form-container.banner > div {
+    max-width: 100%
   }
 }
