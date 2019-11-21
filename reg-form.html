@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="fp-m-form">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/m-form.css">
+    <link rel="stylesheet" href="css/m-forms-cl.css">
+  </head>
+  <body>
+    <header></header>
+
+    <div class="form-container">
+      <div class="form-topline pd--lr">
+        <p>Уже зарегистрированы? <a href="#"> Войти на сайт</a></p>
+      </div>
+      <div class="form-wrapper pd--lr pd--b">
+        <h1>Создать аккаунт</h1>
+        <form class="m-form" action="index.html" method="post">
+          <div class="field">
+            <input type="email" name="email" id="email" placeholder="myemail@example.com" required/>
+            <label for="email"><span>Email</span></label>
+          </div>
+          <div class="field">
+            <input type="password" name="password" id="password" placeholder="Введите пароль" pattern=".{4,}" required/>
+            <label for="password"><span>Пароль</span></label>
+            <span class="unmask far fa-eye" type="button" title="Показать или скрыть пароль" onclick="showPassword()"></span>
+          </div>
+          <input type="submit" value="Зарегистироваться" class="m-button">
+        </form>
+        <div class="splitter">
+          <span>или</span>
+        </div>
+        <h2>Войти с помощью</h2>
+        <div style="display:flex;justify-content: center;">
+          <script src="//ulogin.ru/js/ulogin.js"></script>
+          <div id="uLogin" data-ulogin="display=panel;theme=flat;fields=first_name,last_name;providers=vkontakte,google,yandex,mailru,facebook;hidden=;redirect_uri=https%3A%2F%2Findiprint.ru;mobilebuttons=0;"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

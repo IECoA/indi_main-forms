@@ -21,7 +21,7 @@ footer {
 
 
 /* TEMP: Delete later? */
-.form-container + footer {
+.form-container ~ footer {
   display: none
 }
 
@@ -59,7 +59,11 @@ html.fp-m-form body {
   text-align: center;
   font-weight: 600
 }
+.form-container p {
+  margin: 0
+}
 .form-container h1 {
+  margin-bottom: 20px;
   font-size: 1.643em
 }
 .form-container h2 {
