@@ -19,17 +19,12 @@
       <div class="form-wrapper pd--lr pd--b">
         <h1>Забыли пароль?</h1>
         <p>Введите email. На него будет отправлено письмо для восстановления пароля.</p>
-        <form class="m-form" action="index.html" method="post">
+        <form class="m-form" action="index.html" method="post" data-parsley-validate>
           <div class="field">
             <input type="email" name="email" id="email" placeholder="myemail@example.com" required/>
             <label for="email"><span>Email</span></label>
           </div>
-          <div class="field">
-            <input type="password" name="password" id="password" placeholder="Введите пароль" pattern=".{4,}" required/>
-            <label for="password"><span>Пароль</span></label>
-            <span class="unmask far fa-eye" type="button" title="Показать или скрыть пароль" onclick="showPassword()"></span>
-          </div>
-          <input type="submit" value="Войти" class="m-button">
+          <input type="submit" value="Восстановить пароль" class="m-button">
         </form>
         <p>Вспоминили пароль?<br><a href="login-form.html">Войти на сайт</a></p>
       </div>

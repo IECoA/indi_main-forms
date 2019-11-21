@@ -90,6 +90,22 @@ html.fp-m-form body {
   margin-top: 38px
 }
 
+#password ~ .unmask {
+  height: 2.4625rem;
+  background: center / 22px no-repeat url(../img/eye-show-3.svg);
+  opacity: 0.8;
+  padding: 0 14px 0 0;
+  width: 22px
+}
+.m-form #password[type='text'] ~ span.unmask {
+  background-image: url(../img/eye-hide-3.svg)
+}
+/*
+input ~ .unmask::before {
+  content: "\1F441";
+  content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns="http://www.w3.org/2000/svg" width="470.7" height="268.97" viewBox="0 0 470.7 268.97"><title>eye-show</title><path d="M320,105.51c-86,0-153.08,51.27-235.35,134.49C155.47,311.13,214.93,374.49,320,374.49s182.19-80.27,235.35-133C500.93,179.69,423.81,105.51,320,105.51Zm0,230.41c-51.9,0-94.14-43.08-94.14-95.93S268.1,144.07,320,144.07s94.14,43.08,94.14,95.93S371.9,335.93,320,335.93Z" transform="translate(-84.65 -105.51)"/><path d="M320,206.38a33.73,33.73,0,0,1,8-21.75,50.14,50.14,0,0,0-8-.63c-30.26,0-55,25.11-55,56s24.69,56,55,56,55-25.11,55-56c0-2.42-.21-4.83-.42-7.25A33.66,33.66,0,0,1,320,206.38Z" transform="translate(-84.65 -105.51)"/></svg>");
+}*/
+
 /* Parsley Styling */
 .parsley-errors-list {
 padding:0;
@@ -144,7 +160,10 @@ box-shadow:none
     box-shadow: none;
     border-radius: 0;
     border: none;
-    margin-top: 40px
+    margin-top: 30px
+  }
+  .form-topline {
+    border-top: 1px solid #D9D9D9
   }
   .form-container .pd--lr {
     padding-right: 6vw;
