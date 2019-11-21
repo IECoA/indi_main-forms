@@ -37,7 +37,7 @@ html.fp-m-form body {
   background-color: antiquewhite
 }
 .form-container {
-  max-width: 880px;
+  max-width: 440px;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.16);
   border: 1px solid #0000000f;
   border-radius: 4px;
@@ -185,15 +185,16 @@ input[type].parsley-error, textarea.parsley-error {
 
 
 /* Second Create Half - Relocate later */
-.form-container.banner {
+.form-container.dw-b {
+  max-width: 880px;
   flex-direction: row;
   display: -webkit-box;
   display: flex
 }
-.form-container.banner > div {
+.form-container.dw-b > div {
   max-width: 50%
 }
-.form-container.banner .form-banner {
+.form-container.dw-b .form-banner {
   overflow: hidden;
   position: relative;
   border-radius: 0 4px 4px 0;
@@ -220,7 +221,7 @@ input[type].parsley-error, textarea.parsley-error {
   position: relative;
   left: -4px
 }
-.form-container.banner .form-banner > * {
+.form-container.dw-b .form-banner > * {
   position: absolute;
 }
 .form-banner picture {
@@ -228,13 +229,13 @@ input[type].parsley-error, textarea.parsley-error {
 }
 
 @media (max-width: 1010px) {
-  .form-container.banner {
+  .form-container.dw-b {
     max-width: 440px
   }
   .form-container .form-banner {
     display: none
   }
-  .form-container.banner > div {
+  .form-container.dw-b > div {
     max-width: 100%
   }
 }
