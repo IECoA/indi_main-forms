@@ -67,6 +67,7 @@ html.fp-m-form body {
   font-size: 1.643em
 }
 .form-container h2 {
+  margin-bottom: 10px;
   font-size: 1em
 }
 .form-topline {
@@ -89,11 +90,52 @@ html.fp-m-form body {
   margin-top: 38px
 }
 
+/* Parsley Styling */
+.parsley-errors-list {
+padding:0;
+opacity:0;
+list-style-type:none;
+position:absolute;
+padding-right:12px;
+font-size:12px;
+line-break:unset;
+top:0;
+white-space:nowrap;
+color:#e23030;
+align-self:flex-end;
+margin-top:7px;
+transition:all .3s ease-in;
+-o-transition:all .3s ease-in;
+-moz-transition:all .3s ease-in;
+-webkit-transition:all .3s ease-in
+}
+
+.parsley-errors-list.filled {
+opacity:1
+}
+
+.parsley-errors-list > li {
+background-color:#fff;
+background:#fff;
+box-shadow:6px 0 0 white,-6px 0 0 #fff
+}
+
+input[type='number'] + ul.parsley-errors-list {
+position:relative;
+margin-top:4px
+}
+
+input[type='number'] + ul.parsley-errors-list > li {
+background-color:transparent;
+background:none;
+box-shadow:none
+}
+
 
 /* Media */
 
 @media (max-width: 479px) {
-  html.m-forms body {
+  html.fp-m-form body {
     background: none
   }
   .form-container {
@@ -105,7 +147,7 @@ html.fp-m-form body {
     margin-top: 40px
   }
   .form-container .pd--lr {
-    padding-right: 25px;
-    padding-left: 25px
+    padding-right: 6vw;
+    padding-left: 6vw
   }
 }
