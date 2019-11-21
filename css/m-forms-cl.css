@@ -24,7 +24,10 @@ footer {
 .form-container ~ footer {
   display: none
 }
-
+.m-form::after {
+  position:absolute;width:0;height:0;overflow:hidden;z-index:-1;
+  content:url(../img/eye-show-3.svg) url(../img/eye-hide-3.svg);
+}
 /* Main CSS */
 html.fp-m-form, html.fp-m-form body {
   height: 100%
