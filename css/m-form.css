@@ -343,3 +343,49 @@ select:-webkit-autofill:focus,
   background: white;
   box-shadow: 6px 0 0 white, -6px 0 0 white;
 }
+
+/* Parsley Styling */
+.parsley-errors-list {
+  padding:0;
+  opacity:0;
+  list-style-type:none;
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding-right:12px;
+  font-size:12px;
+  line-break:unset;
+  top:0;
+  white-space:nowrap;
+  color:#e23030;
+  align-self:flex-end;
+  margin-top:7px;
+  transition:all .3s ease-in;
+  -o-transition:all .3s ease-in;
+  -moz-transition:all .3s ease-in;
+  -webkit-transition:all .3s ease-in
+}
+
+.parsley-errors-list.filled {
+  opacity:1
+}
+
+.parsley-errors-list > li {
+  background-color:#fff;
+  background:#fff;
+  box-shadow:6px 0 0 white,-6px 0 0 #fff
+}
+
+input[type='number'] + ul.parsley-errors-list {
+  position:relative;
+  margin-top:4px
+}
+
+input[type='number'] + ul.parsley-errors-list > li {
+  background-color:transparent;
+  background:none;
+  box-shadow:none
+}
+input[type].parsley-error, textarea.parsley-error {
+  border-color: #e23030;
+}
