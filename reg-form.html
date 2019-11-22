@@ -25,7 +25,7 @@
               <label for="email"><span>Email</span></label>
             </div>
             <div class="field">
-              <input type="password" name="password" id="password" placeholder="Введите пароль" pattern=".{4,}" required/>
+              <input type="password" name="password" id="password" placeholder="Введите пароль" pattern=".{4,}" data-parsley-pattern-message="Более 4 символов" required/>
               <label for="password"><span>Пароль</span></label>
               <span class="unmask far fa-eye" type="button" title="Показать или скрыть пароль" onclick="showPassword()"></span>
             </div>
@@ -44,17 +44,12 @@
         </div>
       </div>
       <div class="form-banner">
-        <picture>
-          <source srcset="img/Book-banner.webp" type="image/webp">
-          <source srcset="img/Book-banner.jpg" type="image/jpeg">
-          <img src="img/Book-banner.jpg" alt="Регистрация – онлайн-сервис Индипринт – Фотокниги, скидка 20% на первый заказ">
-        </picture>
         <div>
-          <h2>После регистрации доступны</h2>
+          <h2>Зарегистрируйтесь и получите</h2>
           <ul>
-            <li><span>Скидка 20% на первый заказ</span></li>
+            <li><span>Скидку 20% на первый заказ</span></li>
             <li><span>Хранение проектов и фото онлайн – с доступом на любом компьютере и телефоне</span></li>
-            <li><span>Регулярные акции и предложения со скидками до 50%</span></li>
+            <li><span>Акции и специальные предложения со скидками до 50%</span></li>
           </ul>
         </div>
       </div>
