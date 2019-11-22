@@ -21,11 +21,11 @@
           <h1>Создать аккаунт</h1>
           <form class="m-form" action="index.html" method="post" data-parsley-validate>
             <div class="field">
-              <input type="email" name="email" id="email" placeholder="myemail@example.com" required/>
+              <input type="email" name="email" autocomplete="username" id="email" placeholder="myemail@example.com" required/>
               <label for="email"><span>Email</span></label>
             </div>
             <div class="field">
-              <input type="password" name="password" id="password" placeholder="Введите пароль" pattern=".{4,}" data-parsley-pattern-message="Более 4 символов" required/>
+              <input type="password" name="password" id="password" autocomplete="new-password" placeholder="Введите пароль" pattern=".{4,}" data-parsley-pattern-message="Более 4 символов" required/>
               <label for="password"><span>Пароль</span></label>
               <span class="unmask far fa-eye" type="button" title="Показать или скрыть пароль" onclick="showPassword()"></span>
             </div>
