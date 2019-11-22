@@ -9,7 +9,7 @@ body {
 header {
   min-height: 123px;
   background-color: #edf0f3;
-  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 2px 5px 0 rgba(0, 0, 0, 0.5);
   z-index: 1
 }
 footer {
@@ -39,7 +39,6 @@ html.fp-m-form body {
 .form-container {
   max-width: 440px;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.16);
-  border: 1px solid #0000000f;
   border-radius: 4px;
   color: #333;
   font-size: 14px;
@@ -230,7 +229,8 @@ input[type].parsley-error, textarea.parsley-error {
 
 @media (max-width: 1010px) {
   .form-container.dw-b {
-    max-width: 440px
+    max-width: 440px;
+    /* border: 1px solid #0000000f*/
   }
   .form-container .form-banner {
     display: none
