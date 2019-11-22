@@ -29,8 +29,7 @@ body.forms {
   margin:0
 }
 .m-form .field {
-  margin: 0 0 -2px 0;
-  margin-bottom: 0.1em;
+  margin: 0 0 2px 0;
   position: relative
 }
 .m-form h1, .m-form h2, .m-form h3 {
@@ -431,7 +430,7 @@ select:-webkit-autofill:focus,
   color:#e23030;
   -ms-flex-item-align:end;
       align-self:flex-end;
-  margin:6px 0 0 0;
+  margin:7px 0 0 0;
   transition:all .3s ease-in;
   -o-transition:all .3s ease-in;
   -moz-transition:all .3s ease-in;
