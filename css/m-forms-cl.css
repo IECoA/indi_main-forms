@@ -203,7 +203,7 @@ input[type].parsley-error, textarea.parsley-error {
   overflow: hidden;
   position: relative;
   background: center / cover no-repeat;
-  background-image: url("../img/form-bnr.jpg"));
+  background-image: url("../img/form-bnr.jpg");
   background-image: -webkit-image-set(url("../img/form-bnr.webp")1x);
   border-radius: 0 4px 4px 0
 }
