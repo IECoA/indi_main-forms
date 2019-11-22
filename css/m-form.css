@@ -181,28 +181,19 @@ body.forms {
 .m-form input:not(:placeholder-shown):not(:focus) ~ label {
   color: #414141
 }
-.m-form .unmask {
-  font-size: 18px;
-  line-height: 1rem;
-  border: 0;
-  display: none;
-  background: none;
-  cursor: pointer;
-  width: auto;
-  position: absolute;
-  align-self: flex-end;
-  outline: none;
-  padding: 11px 8px;
-  color: rgb(107, 107, 107);
-}
 #password ~ .unmask {
-  font-size: 18px;
   border: 0;
   display: none;
   background: none;
   cursor: pointer;
-  width: auto;
+  height: 2.4625rem;
+  width: 22px;
+  padding: 0 14px 0 0;
+  opacity: 0.8;
+  background: center / 22px no-repeat url(../img/eye-show-3.svg);
   position: absolute;
+  bottom: 0;
+  right: 0;
   align-self: flex-end;
   outline: none;
   color: rgb(107, 107, 107)
@@ -210,14 +201,8 @@ body.forms {
 #password[required]:focus ~ .unmask, #password[required]:not(:placeholder-shown) ~ .unmask {
   display: block;
 }
-[type='password'] ~ button.unmask {
-  color: rgb(107, 107, 107)
-}
-[type='text']:not(:placeholder-shown) ~ button.unmask {
-  color: #2F96D9
-}
-.m-form #password[type='text'] ~ span.unmask {
-  color: #2F96D9;
+#password[type='text'] ~ span.unmask {
+  background-image: url(../img/eye-hide-3.svg)
 }
 #password[required]:placeholder-shown ~ span.unmask {
   pointer-events: none;

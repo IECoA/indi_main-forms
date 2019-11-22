@@ -105,16 +105,6 @@ html.fp-m-form body {
 .f-policy {
   font-size: 12px
 }
-#password ~ .unmask {
-  height: 2.4625rem;
-  background: center / 22px no-repeat url(../img/eye-show-3.svg);
-  opacity: 0.8;
-  padding: 0 14px 0 0;
-  width: 22px
-}
-.m-form #password[type='text'] ~ span.unmask {
-  background-image: url(../img/eye-hide-3.svg)
-}
 
 /* Parsley Styling */
 .parsley-errors-list {
